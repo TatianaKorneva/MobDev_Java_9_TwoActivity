@@ -7,26 +7,26 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityTwo extends AppCompatActivity  implements View.OnClickListener {
+public class activity_four extends AppCompatActivity  implements View.OnClickListener {
 
     Button btnActOne;
+    Button btnActTwo;
     Button btnActThree;
-    Button btnActFour;
     final String TAG = "States";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two);
+        setContentView(R.layout.activity_four);
 
         btnActOne = (Button) findViewById(R.id.btnActOne);
         btnActOne.setOnClickListener(this);
+        btnActTwo = (Button) findViewById(R.id.btnActTwo);
+        btnActTwo.setOnClickListener(this);
         btnActThree = (Button) findViewById(R.id.btnActThree);
         btnActThree.setOnClickListener(this);
-        btnActFour = (Button) findViewById(R.id.btnActFour);
-        btnActFour.setOnClickListener(this);
 
-        Log.d(TAG, "ActivityTwo: onCreate()");
+        Log.d(TAG, "activity_four: onCreate()");
     }
 
     @Override
@@ -36,12 +36,12 @@ public class ActivityTwo extends AppCompatActivity  implements View.OnClickListe
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btnActThree:
-                Intent intent2 = new Intent(this, activity_three.class);
+            case R.id.btnActTwo:
+                Intent intent2 = new Intent(this, ActivityTwo.class);
                 startActivity(intent2);
                 break;
-            case R.id.btnActFour:
-                Intent intent3 = new Intent(this, activity_four.class);
+            case R.id.btnActThree:
+                Intent intent3 = new Intent(this, activity_three.class);
                 startActivity(intent3);
                 break;
             default:
@@ -52,35 +52,36 @@ public class ActivityTwo extends AppCompatActivity  implements View.OnClickListe
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(TAG, "ActivityTwo: onStart()");
+        Log.d(TAG, "activity_four: onStart()");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "ActivityTwo: onResume()");
+        Log.d(TAG, "activity_four: onResume()");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(TAG, "ActivityTwo: onPause()");
+        Log.d(TAG, "activity_four: onPause()");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(TAG, "ActivityTwo: onStop()");
+        Log.d(TAG, "activity_four: onStop()");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "ActivityTwo: onDestroy()");
+        Log.d(TAG, "activity_four: onDestroy()");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d(TAG, "ActivityTwo: onRestart()");
+        Log.d(TAG, "activity_four: onRestart()");
     }}
+

@@ -3,12 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
+    android:layout_height="fill_parent"
+    android:layout_marginTop="25px"
+    android:layout_marginLeft="45pt">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☺ This is Activity One ☺">
+    </TextView>
     <Button
         android:id="@+id/btnActTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="Go to Activity Two"></Button>
+    <Button
+        android:id="@+id/btnActThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Go to Activity Three"></Button>
+    <Button
+        android:id="@+id/btnActFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Go to Activity Four"></Button>
 </LinearLayout>

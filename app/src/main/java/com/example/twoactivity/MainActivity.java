@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 
     Button btnActTwo;
+    Button btnActThree;
+    Button btnActFour;
     final String TAG = "States";
 
     @Override
@@ -19,6 +21,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         btnActTwo = (Button) findViewById(R.id.btnActTwo);
         btnActTwo.setOnClickListener(this);
+        btnActThree = (Button) findViewById(R.id.btnActThree);
+        btnActThree.setOnClickListener(this);
+        btnActFour = (Button) findViewById(R.id.btnActFour);
+        btnActFour.setOnClickListener(this);
 
         Log.d(TAG, "MainActivity: onCreate()");
     }
@@ -29,6 +35,14 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             case R.id.btnActTwo:
                 Intent intent = new Intent(this, ActivityTwo.class);
                 startActivity(intent);
+                break;
+            case R.id.btnActThree:
+                Intent intent2 = new Intent(this, activity_three.class);
+                startActivity(intent2);
+                break;
+            case R.id.btnActFour:
+                Intent intent3 = new Intent(this, activity_four.class);
+                startActivity(intent3);
                 break;
             default:
                 break;
