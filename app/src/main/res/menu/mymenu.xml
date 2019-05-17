@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_one"
+        android:title="Activity One">
+    </item>
+    <item
+        android:id="@+id/menu_two"
+        android:title="Activity Two">
+    </item>
+    <item
+        android:id="@+id/menu_three"
+        android:orderInCategory="3"
+        android:title="Activity Three">
+    </item>
+    <item
+        android:id="@+id/menu_four"
+        android:orderInCategory="3"
+        android:title="Activity Four">
+    </item>
+</menu>

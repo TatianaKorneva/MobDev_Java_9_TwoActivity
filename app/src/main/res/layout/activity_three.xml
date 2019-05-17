@@ -10,7 +10,8 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="☺ This is Activity Three ☺">
+        android:textSize="7pt"
+        android:text="🐾This is Activity Three🐾">
     </TextView>
     <Button
         android:id="@+id/btnActOne"

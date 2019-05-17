@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -47,6 +49,36 @@ public class activity_three extends AppCompatActivity  implements View.OnClickLi
             default:
                 break;
         }
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mymenu, menu);
+        return  super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+            case R.id.menu_one:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.menu_two:
+                Intent intent2 = new Intent(this, ActivityTwo.class);
+                startActivity(intent2);
+                break;
+            case R.id.menu_three:
+                Intent intent3 = new Intent(this, activity_three.class);
+                startActivity(intent3);
+                break;
+            case R.id.menu_four:
+                Intent intent4 = new Intent(this, activity_four.class);
+                startActivity(intent4);
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
